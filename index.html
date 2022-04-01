@@ -17,14 +17,13 @@
 
 <body>
 
-    <div class="root">
+    <div id="root">
         <div v-for="i in [onIndex]" :key="i">
             <a class="prev" @click="prev" href="#">&#10094;</a>
-            <img :src="currentImg" />
+            <img :src="images[onIndex]" />
             <a class="next" @click="next" href="#">&#10095;</a>
         </div>
     </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="./main.js"></script>
